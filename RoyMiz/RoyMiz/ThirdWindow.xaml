@@ -1,0 +1,47 @@
+﻿<Window x:Class="RoyMiz.ThirdWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RoyMiz"
+        mc:Ignorable="d"
+        Title="RoyMiz" Height="450" Width="800" Background="#c6c600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="245*"/>
+            <ColumnDefinition Width="547*"/>
+        </Grid.ColumnDefinitions>
+        <Label Name="lblFileName" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="168"/>
+
+        <Label Content="Number of repetitions" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="143" ToolTip="Numeric Value Like(1)(5)(8)(7)"/>
+        <Label Content="Final Space(MiliSeconds)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="143" Margin="10,147,0,0"/>
+        <Label Content="Initial space(MiliSeconds)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="143" Margin="10,105,0,0"/>
+        <TextBox Name="txtRepetitions" MaxLength="3" HorizontalAlignment="Left" Height="23" Margin="178,61,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="143" Grid.ColumnSpan="2"/>
+        <TextBox Name="txtInitialSpace" MaxLength="6" HorizontalAlignment="Left" Height="23" Margin="178,105,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="143" Grid.ColumnSpan="2"/>
+        <TextBox Name="txtFinalSpace" MaxLength="6" HorizontalAlignment="Left" Height="23" Margin="178,150,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="143" Grid.ColumnSpan="2"/>
+        <Button Content="NEXT" HorizontalAlignment="Left" Margin="65,347,0,0" VerticalAlignment="Top" Width="171" Height="47" FontSize="20" FontWeight="Bold" Click="BtnNext_Click" Grid.Column="1"/>
+        <Label x:Name="lblRepTooltip" Background="DarkKhaki" Content="?" HorizontalAlignment="Left" Margin="81,61,0,0" VerticalAlignment="Top" Height="23" Width="15" FontWeight="Bold" Grid.Column="1" >
+
+            <Label.ToolTip>
+                <ToolTip>
+                    Contains Numeric values Like 1,4,8,10
+                </ToolTip>
+            </Label.ToolTip>
+
+        </Label>
+        <Label x:Name="lblInitTooltip" Background="DarkKhaki" Content="?" HorizontalAlignment="Left" Margin="81,104,0,0" VerticalAlignment="Top" Height="23" Width="15" FontWeight="Bold" Grid.Column="1" >
+
+            <Label.ToolTip>
+                <ToolTip Content="Contain Value in Milisecond(1 second=1000 MiliSeconds)"/>
+            </Label.ToolTip>
+
+        </Label>
+        <Label x:Name="lblFinalTooltip" Background="DarkKhaki" Content="?" HorizontalAlignment="Left" Margin="81,150,0,0" VerticalAlignment="Top" Height="23" Width="15" FontWeight="Bold" Grid.Column="1" >
+
+            <Label.ToolTip>
+                <ToolTip Content="Contain Value in Milisecond(1 second=1000 MiliSeconds)"/>
+            </Label.ToolTip>
+
+        </Label>
+    </Grid>
+</Window>

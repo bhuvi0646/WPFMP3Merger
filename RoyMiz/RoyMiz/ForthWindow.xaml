@@ -1,0 +1,25 @@
+﻿<Window x:Class="RoyMiz.ForthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RoyMiz"
+        mc:Ignorable="d"
+              Title="RoyMiz" Height="450" Width="800" Background="#ebdb34" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Button x:Name="DownloadButton"  Content="Download
+" HorizontalAlignment="Center"   
+                Margin="263,233,309,148" VerticalAlignment="Center"  Width="222" 
+                RenderTransformOrigin="1.047,0.821" Height="40" FontWeight="Bold" FontSize="20" Click="DownloadButton_Click" />
+        <Button x:Name="PlayButton"  Content="Play
+" HorizontalAlignment="Center"   
+                Margin="263,177,309,204" VerticalAlignment="Center"  Width="222" 
+                RenderTransformOrigin="1.047,0.821" Height="40" FontWeight="Bold" FontSize="20" Click="PlayButton_Click" />
+        <Button x:Name="StopButton" Visibility="Hidden"  Content="Stop
+" HorizontalAlignment="Center"   
+                Margin="263,177,309,204" VerticalAlignment="Center"  Width="222" 
+                RenderTransformOrigin="1.047,0.821" Height="40" FontWeight="Bold" FontSize="20" Click="StopButton_Click" />
+
+    </Grid>
+</Window>
